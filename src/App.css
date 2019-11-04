@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.panel {
+  display: flex;
+  background: red;
+}
+
+.panel__one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: green;
+  padding: 1rem;
+  border-right: 1px solid black;
+}
+
+.panel__two {
+  display: flex;
+  padding: 1rem;
+  flex: 1;
+}
+
+.bet-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}

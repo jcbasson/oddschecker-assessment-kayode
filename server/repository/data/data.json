@@ -1,0 +1,318 @@
+{
+  "byId": {
+    "1": {
+      "id": 1,
+      "eventName": "Borussia Dortmund vs Inter Milan",
+      "startTime": "2019-11-05T20:00:00+00:00",
+      "homeName": "Dortmund",
+      "awayName": "Inter Milan",
+      "markets": [
+        {
+          "marketName": "Winner",
+          "marketId": 1,
+          "bets": [
+            {
+              "name": "Dortmund",
+              "genericName": "HOME",
+              "betId": 26332767598,
+              "odds": [
+                {
+                  "bookmakerCode": "U5",
+                  "eachWayTerms": "",
+                  "oddsFractional": "21/20",
+                  "oddsDecimal": 2.5,
+                  "openingOddsDecimal": 2.5,
+                  "oddsUS": 105,
+                  "bookmakerBetId": "2667387492",
+                  "movement": "none",
+                  "suspended": false
+                },
+                {
+                  "bookmakerCode": "U2",
+                  "eachWayTerms": "",
+                  "oddsFractional": "21/20",
+                  "oddsDecimal": 2.5,
+                  "openingOddsDecimal": 2.5,
+                  "oddsUS": 105,
+                  "bookmakerBetId": "2667387492",
+                  "movement": "none",
+                  "suspended": false
+                },
+                {
+                  "bookmakerCode": "U6",
+                  "eachWayTerms": "",
+                  "oddsFractional": "21/20",
+                  "oddsDecimal": 2.05,
+                  "openingOddsDecimal": 2.05,
+                  "oddsUS": 105,
+                  "bookmakerBetId": "1-2667387492",
+                  "movement": "none",
+                  "suspended": false
+                },
+                {
+                  "bookmakerCode": "U1",
+                  "eachWayTerms": "",
+                  "oddsFractional": "1",
+                  "oddsDecimal": 2.0,
+                  "openingOddsDecimal": 2.0,
+                  "oddsUS": 100,
+                  "bookmakerBetId": "92986056.3",
+                  "movement": "none",
+                  "suspended": true
+                },
+                {
+                  "bookmakerCode": "U3",
+                  "eachWayTerms": "",
+                  "oddsFractional": "1",
+                  "oddsDecimal": 2.0,
+                  "openingOddsDecimal": 2.0,
+                  "oddsUS": 100,
+                  "bookmakerBetId": "R571444553",
+                  "movement": "none",
+                  "suspended": false
+                }
+              ],
+              "bestOpeningOddsDecimal": "2.5"
+            },
+            {
+              "name": "Draw",
+              "genericName": "DRAW",
+              "betId": 26332767595,
+              "odds": [
+                {
+                  "bookmakerCode": "U5",
+                  "eachWayTerms": "",
+                  "oddsFractional": "13/5",
+                  "oddsDecimal": 3.6,
+                  "openingOddsDecimal": 3.6,
+                  "oddsUS": 260,
+                  "bookmakerBetId": "2667387493",
+                  "movement": "none",
+                  "suspended": false
+                },
+                {
+                  "bookmakerCode": "U1",
+                  "eachWayTerms": "",
+                  "oddsFractional": "13/5",
+                  "oddsDecimal": 3.6,
+                  "openingOddsDecimal": 3.6,
+                  "oddsUS": 260,
+                  "bookmakerBetId": "92986064.3",
+                  "movement": "none",
+                  "suspended": true
+                },
+                {
+                  "bookmakerCode": "U2",
+                  "eachWayTerms": "",
+                  "oddsFractional": "13/5",
+                  "oddsDecimal": 3.5,
+                  "openingOddsDecimal": 3.5,
+                  "oddsUS": 260,
+                  "bookmakerBetId": "2667387493",
+                  "movement": "none",
+                  "suspended": false
+                },
+                {
+                  "bookmakerCode": "U3",
+                  "eachWayTerms": "",
+                  "oddsFractional": "28/11",
+                  "oddsDecimal": 3.55,
+                  "openingOddsDecimal": 3.55,
+                  "oddsUS": 254,
+                  "bookmakerBetId": "R571444556",
+                  "movement": "none",
+                  "suspended": false
+                },
+                {
+                  "bookmakerCode": "U6",
+                  "eachWayTerms": "",
+                  "oddsFractional": "5/2",
+                  "oddsDecimal": 3.5,
+                  "openingOddsDecimal": 3.5,
+                  "oddsUS": 250,
+                  "bookmakerBetId": "1-2667387493",
+                  "movement": "none",
+                  "suspended": false
+                }
+              ],
+              "bestOpeningOddsDecimal": "3.60"
+            },
+            {
+              "name": "Inter Milan",
+              "genericName": "AWAY",
+              "betId": 26332767597,
+              "odds": [
+                {
+                  "bookmakerCode": "U3",
+                  "eachWayTerms": "",
+                  "oddsFractional": "11/4",
+                  "oddsDecimal": 3.75,
+                  "openingOddsDecimal": 3.75,
+                  "oddsUS": 275,
+                  "bookmakerBetId": "R571444557",
+                  "movement": "none",
+                  "suspended": false
+                },
+                {
+                  "bookmakerCode": "U6",
+                  "eachWayTerms": "",
+                  "oddsFractional": "11/4",
+                  "oddsDecimal": 3.5,
+                  "openingOddsDecimal": 3.5,
+                  "oddsUS": 275,
+                  "bookmakerBetId": "R571444557",
+                  "movement": "none",
+                  "suspended": false
+                },
+                {
+                  "bookmakerCode": "U7",
+                  "eachWayTerms": "",
+                  "oddsFractional": "11/4",
+                  "oddsDecimal": 3.5,
+                  "openingOddsDecimal": 3.5,
+                  "oddsUS": 275,
+                  "bookmakerBetId": "R571444557",
+                  "movement": "none",
+                  "suspended": true
+                },
+                {
+                  "bookmakerCode": "U5",
+                  "eachWayTerms": "",
+                  "oddsFractional": "13/5",
+                  "oddsDecimal": 3.5,
+                  "openingOddsDecimal": 3.5,
+                  "oddsUS": 260,
+                  "bookmakerBetId": "2667387494",
+                  "movement": "none",
+                  "suspended": false
+                },
+                {
+                  "bookmakerCode": "U2",
+                  "eachWayTerms": "",
+                  "oddsFractional": "13/5",
+                  "oddsDecimal": 3.5,
+                  "openingOddsDecimal": 3.5,
+                  "oddsUS": 260,
+                  "bookmakerBetId": "92986069.3",
+                  "movement": "none",
+                  "suspended": false
+                }
+              ],
+              "bestOpeningOddsDecimal": "3.75"
+            }
+          ]
+        },
+        {
+          "marketName": "Both Teams To Score",
+          "marketId": 2,
+          "bets": [
+            {
+              "name": "Yes",
+              "genericName": "YES",
+              "betId": 26332768260,
+              "odds": [
+                {
+                  "bookmakerCode": "U4",
+                  "eachWayTerms": "",
+                  "oddsFractional": "4/6",
+                  "oddsDecimal": 1.67,
+                  "openingOddsDecimal": 1.67,
+                  "oddsUS": -150,
+                  "bookmakerBetId": "1859582066",
+                  "movement": "none",
+                  "suspended": false
+                },
+                {
+                  "bookmakerCode": "U7",
+                  "eachWayTerms": "",
+                  "oddsFractional": "11/17",
+                  "oddsDecimal": 1.65,
+                  "openingOddsDecimal": 1.65,
+                  "oddsUS": -154,
+                  "bookmakerBetId": "13451671",
+                  "movement": "none",
+                  "suspended": false
+                },
+                {
+                  "bookmakerCode": "U5",
+                  "eachWayTerms": "",
+                  "oddsFractional": "3/5",
+                  "oddsDecimal": 1.6,
+                  "openingOddsDecimal": 1.6,
+                  "oddsUS": -166,
+                  "bookmakerBetId": "2668139783",
+                  "movement": "none",
+                  "suspended": false
+                },
+                {
+                  "bookmakerCode": "U2",
+                  "eachWayTerms": "",
+                  "oddsFractional": "3/5",
+                  "oddsDecimal": 1.6,
+                  "openingOddsDecimal": 1.6,
+                  "oddsUS": -166,
+                  "bookmakerBetId": "2668139783",
+                  "movement": "none",
+                  "suspended": false
+                }
+              ],
+              "bestOpeningOddsDecimal": "1.67"
+            },
+            {
+              "name": "No",
+              "genericName": "NO",
+              "betId": 26332768258,
+              "odds": [
+                {
+                  "bookmakerCode": "U5",
+                  "eachWayTerms": "",
+                  "oddsFractional": "5/4",
+                  "oddsDecimal": 2.28,
+                  "openingOddsDecimal": 2.28,
+                  "oddsUS": 125,
+                  "bookmakerBetId": "2668139786",
+                  "movement": "none",
+                  "suspended": false
+                },
+                {
+                  "bookmakerCode": "U2",
+                  "eachWayTerms": "",
+                  "oddsFractional": "5/4",
+                  "oddsDecimal": 2.27,
+                  "openingOddsDecimal": 2.27,
+                  "oddsUS": 125,
+                  "bookmakerBetId": "2668139786",
+                  "movement": "none",
+                  "suspended": false
+                },
+                {
+                  "bookmakerCode": "U4",
+                  "eachWayTerms": "",
+                  "oddsFractional": "23/20",
+                  "oddsDecimal": 2.15,
+                  "openingOddsDecimal": 2.15,
+                  "oddsUS": 114,
+                  "bookmakerBetId": "1859582068",
+                  "movement": "none",
+                  "suspended": false
+                },
+                {
+                  "bookmakerCode": "U7",
+                  "eachWayTerms": "",
+                  "oddsFractional": "15/13",
+                  "oddsDecimal": 2.15,
+                  "openingOddsDecimal": 2.15,
+                  "oddsUS": 115,
+                  "bookmakerBetId": "13451672",
+                  "movement": "none",
+                  "suspended": false
+                }
+              ],
+              "bestOpeningOddsDecimal": "2.28"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
