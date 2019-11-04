@@ -1,7 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
-import BetDashboard from "./components/Betdashboard";
-import "./App.css";
+import BetDashboard from "./BetDashboard";
 
 function App() {
   return (
