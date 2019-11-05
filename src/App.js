@@ -1,5 +1,5 @@
 import React from "react";
-import BetDashboard from "./BetDashboard";
+import BetDashboard from "./sections/BetDashboard";
 
 function App() {
   return (
