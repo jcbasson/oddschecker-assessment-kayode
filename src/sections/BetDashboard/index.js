@@ -1,17 +1,21 @@
 import { connect } from "react-redux";
 import { compose } from "redux";
 import { changeSelection } from "./actions/betsVisibilityAction";
+import { getBet } from "./actions/betsActions";
 import BetDashboard from "./BetDashboard";
 
 const mapStateToProps = state => {
-  console.log(state);
   return {
-    initialValues: state.betsReducer.visibility.selected
+    initialValues: state.betsReducer.visibility.selected,
+    isLoading: state.loadingReducer.event.isLoading,
+    markets: state.betsReducer.bet.markets,
+    marketName: state.betsReducer.visibility.selected.marketName
   };
 };
 
 const mapDispatchToProps = {
-  changeSelection
+  changeSelection,
+  getBet
 };
 
 export default compose(

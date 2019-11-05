@@ -10,14 +10,13 @@ import {
 
 class BetDashboard extends Component {
   componentDidMount() {
-    fetch("http://localhost:8765/event/1")
-      .then(res => res.json())
-      .then(result => {
-        console.log(result);
-      });
+    const { getBet } = this.props;
+    getBet({ id: 1 });
   }
+
   render() {
-    const { changeSelection, initialValues } = this.props;
+    const { isLoading, markets, initialValues, changeSelection } = this.props;
+
     return (
       <Section>
         <Panel>
