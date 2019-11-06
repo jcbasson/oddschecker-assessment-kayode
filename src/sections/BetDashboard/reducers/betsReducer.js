@@ -1,6 +1,11 @@
 const initialState = {
   markets: [],
-  event: {},
+  event: {
+    awayName: "",
+    eventName: "",
+    homeName: "",
+    startTime: ""
+  },
   id: null
 };
 
@@ -9,14 +14,15 @@ export default function betsReducer(state = initialState, action) {
     case "GET_BET": {
       return {
         ...state,
-        id: action.payload.id,
         markets: action.payload.markets,
         event: {
+          ...state.event,
           awayName: action.payload.awayName,
           eventName: action.payload.eventName,
           homeName: action.payload.homeName,
           startTime: action.payload.startTime
-        }
+        },
+        id: action.payload.id
       };
     }
     default:

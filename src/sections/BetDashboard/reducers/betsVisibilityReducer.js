@@ -1,13 +1,13 @@
 import {
   BETS_VISIBILITY_CHANGE,
-  BETS_DISPLAY_FORMAT,
-  BETS_MARKET_NAME
+  BETS_DISPLAY_FORMAT_DECIMAL,
+  BETS_MARKET_NAME_WINNER
 } from "../constants";
 
 const initialState = {
   selected: {
-    marketName: BETS_MARKET_NAME,
-    displayFormat: BETS_DISPLAY_FORMAT
+    marketName: BETS_MARKET_NAME_WINNER,
+    displayFormat: BETS_DISPLAY_FORMAT_DECIMAL
   }
 };
 

@@ -14,8 +14,8 @@ export function getBet({ id }) {
     dispatch(startLoading({ title: "event" }));
     try {
       const response = await API.getBets({ urlPath: "event", id });
-      dispatch(finishLoading({ title: "event" }));
       dispatch(getBetAction(response));
+      dispatch(finishLoading({ title: "event" }));
     } catch (err) {
       dispatch(finishLoading({ title: "event" }));
       console.log(err);
