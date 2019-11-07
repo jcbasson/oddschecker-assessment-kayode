@@ -48,3 +48,10 @@ export const findByName = (markets, marketName) => {
     market => market.marketName.toLowerCase() === marketName.toLowerCase()
   );
 };
+
+/*  CSS Media queries break point */
+export const breakPoints = {
+  tablets: "47.5rem" /* 768px */,
+  laptop: "64rem" /* 1024px */,
+  mobile: "29.25rem" /* 468px  */
+};

@@ -1,10 +1,14 @@
 import styled from "styled-components";
-
+import { breakPoints } from "../../../utils";
 /* 
    Bet-DaasBoard-styles
 */
 export const StyledSection = styled.section`
-  padding: 0 5rem;
+  padding: 0 1rem;
+
+  @media (min-width: ${breakPoints.tablet}) {
+    padding: 0 5rem;
+  }
 `;
 
 export const StyledHeader = styled("header")`
@@ -22,25 +26,42 @@ export const StyledHeader = styled("header")`
 `;
 
 export const StyledPanel = styled.div`
-  max-width: 1200px;
+  width: 100%;
+
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   border: 1px solid black;
+
+  @media (min-width: ${breakPoints.laptop}) {
+    flex-direction: row;
+    max-width: 75rem; /* 1200px */
+  }
 `;
 
 export const StyledPanelLeft = styled.aside`
   flex: 1;
   padding: 1rem;
-  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: none;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
+  @media (min-width: ${breakPoints.laptop}) {
+    border-right: 1px solid black;
+    border-bottom: none;
+  }
 `;
 
 export const StyledPanelRight = styled.aside`
   flex: 4;
-  padding: 1rem;
+  padding: 0;
   overflow-x: auto;
+
+  @media (min-width: ${breakPoints.laptop}) {
+    padding: 1rem;
+  }
 `;
 
 /*
