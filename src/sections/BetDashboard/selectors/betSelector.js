@@ -14,10 +14,6 @@ export const getEventLoadinSelector = createSelector(
   event => event.isLoading
 );
 
-export const getEventErrorSelector = createSelector(betsSelector => {
-  console.log(betsSelector);
-});
-
 export const getMarketsSelector = createSelector(
   betsSelector,
   bet => {
