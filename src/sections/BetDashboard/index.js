@@ -4,18 +4,27 @@ import { changeSelection } from "./actions/betsVisibilityAction";
 import { getBet } from "./actions/betsActions";
 import {
   getSelectedMarketSelector,
-  getEventNameSelector
+  getEventNameSelector,
+  getEventLoadinSelector
 } from "./selectors/betSelector";
-import { getSelectectedDisplayFormatSelector } from "./selectors/visibilitySelector";
+import {
+  getSelectectedDisplayFormatSelector,
+  getSelectedMarketNameSelector,
+  getInitialValuesSelector
+} from "./selectors/visibilitySelector";
 import BetDashboard from "./BetDashboard";
 
-const mapStateToProps = state => ({
-  initialValues: state.betsReducer.visibility.selected,
-  isLoading: state.loadingReducer.event.isLoading,
-  selectedMarket: getSelectedMarketSelector(state),
-  selectedDisplayFormat: getSelectectedDisplayFormatSelector(state),
-  event: getEventNameSelector(state)
-});
+const mapStateToProps = state => {
+  return {
+    initialValues: getInitialValuesSelector(state),
+    isLoading: getEventLoadinSelector(state),
+    selectedMarket: getSelectedMarketSelector(state),
+    selectedDisplayFormat: getSelectectedDisplayFormatSelector(state),
+    selectedMarketName: getSelectedMarketNameSelector(state),
+    event: getEventNameSelector(state),
+    errorMessage: state.betsReducer.bet.errorMessage
+  };
+};
 
 const mapDispatchToProps = {
   changeSelection,

@@ -22,7 +22,7 @@ export const sortBy = (items, property) => {
   });
 };
 
-export const filterAndSortMarkets = markets => {
+export const filterAndSortMarkets = (markets = []) => {
   const result = markets.reduce((acc, current) => {
     const formattedMarket = {
       marketName: current.marketName,
@@ -39,14 +39,31 @@ export const filterAndSortMarkets = markets => {
   return result;
 };
 
-export const findById = (markets, id) => {
-  return markets.find(market => market.marketId === id);
+export const findBy = (items, property) => {
+  return items.find(item => item[property] === property);
 };
 
 export const findByName = (markets, marketName) => {
   return markets.find(
     market => market.marketName.toLowerCase() === marketName.toLowerCase()
   );
+};
+
+export const getSelectedBet = ({ bets = [], betId, bookmakerCode }) => {
+  if (typeof betId !== "number") {
+    throw new Error(`expected betId to be of type number`);
+  }
+
+  const { odds, name } = bets.find(bet => bet.betId === betId);
+  return {
+    name,
+    odd: odds.find(odd => odd.bookmakerCode === bookmakerCode)
+  };
+};
+
+export const calculatePotentialWinnings = (odd, stake) => {
+  const [firstItem] = odd.split("/");
+  return parseFloat(firstItem) * parseFloat(stake);
 };
 
 /*  CSS Media queries break point */

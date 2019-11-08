@@ -1,3 +1,5 @@
+import { BETS_GET_LOAD_EVENT, BETS_GET_LOAD_ERROR } from "../constants";
+
 const initialState = {
   markets: [],
   event: {
@@ -6,12 +8,13 @@ const initialState = {
     homeName: "",
     startTime: ""
   },
-  id: null
+  id: null,
+  error: ""
 };
 
 export default function betsReducer(state = initialState, action) {
   switch (action.type) {
-    case "GET_BET": {
+    case BETS_GET_LOAD_EVENT: {
       return {
         ...state,
         markets: action.payload.markets,
@@ -23,6 +26,11 @@ export default function betsReducer(state = initialState, action) {
           startTime: action.payload.startTime
         },
         id: action.payload.id
+      };
+    }
+    case BETS_GET_LOAD_ERROR: {
+      return {
+        errorMessage: action.payload.errorMessage
       };
     }
     default:

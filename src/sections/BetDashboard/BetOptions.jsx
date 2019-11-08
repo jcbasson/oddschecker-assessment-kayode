@@ -11,6 +11,7 @@ function BetOptions({ selectOptions, radioOptions, onChange, initialValues }) {
   const handleChange = e => {
     const name = e.target.name;
     const value = e.target.value;
+
     setFormValue(v => {
       return {
         ...v,

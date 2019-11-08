@@ -6,7 +6,17 @@ import {
   BETS_MARKET_NAME_BOTH_TEAMS_TO_SCORE
 } from "../constants";
 
+const LoadingSelector = state => state.loadingReducer.event;
 const betsSelector = state => state.betsReducer.bet;
+
+export const getEventLoadinSelector = createSelector(
+  LoadingSelector,
+  event => event.isLoading
+);
+
+export const getEventErrorSelector = createSelector(betsSelector => {
+  console.log(betsSelector);
+});
 
 export const getMarketsSelector = createSelector(
   betsSelector,

@@ -7,7 +7,7 @@ const getTableHeader = (items = [], property) => {
   return ["betName", ...items.map(item => item[property])];
 };
 
-function BetsTable({ selectedDisplayFormat, selectedMarket }) {
+function BetsTable({ selectedDisplayFormat, selectedMarket, onBetSelect }) {
   if (!selectedMarket) {
     return null;
   }
@@ -26,12 +26,15 @@ function BetsTable({ selectedDisplayFormat, selectedMarket }) {
         {bet.odds.map(odd => {
           return (
             <td
-              className="odd-title"
+              key={odd.bookmakerCode}
+              data-bk={odd.bookmakerCode}
+              data-bid={bet.betId}
+              className={`odd-title`}
+              onClick={onBetSelect}
               style={{
                 fontWeight:
                   odd.oddsDecimal >= bet.bestOpeningOddsDecimal && "bold"
               }}
-              key={odd.bookmakerCode}
             >
               {isDecimal ? odd.oddsDecimal : odd.oddsFractional}
             </td>
